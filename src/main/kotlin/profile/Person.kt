@@ -14,3 +14,4 @@ data class Person(
     @SerialName("address") val address: String,
     @SerialName("phone_number") val phoneNumber: String
 )
+
