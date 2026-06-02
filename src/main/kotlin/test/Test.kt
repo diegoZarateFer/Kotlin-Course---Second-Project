@@ -1,25 +1,11 @@
 package test
 
-import java.io.File
-
-val numbers = mutableListOf<Int>()
-
 fun main() {
-    println(sum(8,7))
+    val a = readln().toInt()
+    println(a.isPositive())
 }
 
-//fun sum(a: Int): Int {
-//    val file = File("tests.txt")
-//    val num = file.readText().trim().toInt()
-//    return a + num
-//}
 
-fun sum(a: Int, b: Int): Int {
-    val result = a + b
-    numbers.add(result)
-    return result
+fun Int.isPositive(): Boolean {
+    return this > 0
 }
-
-//fun sum(a: Int, b: Int): Int {
-//    return a + b;
-//}
