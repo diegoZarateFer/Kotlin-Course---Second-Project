@@ -9,5 +9,5 @@ fun main() {
         .map { it.copy(price = it.price * 2) }
         .map { "${it.id} - ${it.name} - ${it.price}" }
         .also { println("Printing...") }
-        .forEach { println(it) }
+        .forEach(::println)
 }

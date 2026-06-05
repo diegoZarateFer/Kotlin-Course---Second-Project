@@ -39,3 +39,7 @@ fun exampleWith() {
         println("MIN: ${min()}")
     }
 }
+
+inline fun <T, R> T.run(operation: T.() -> R): R {
+    return operation()
+}
